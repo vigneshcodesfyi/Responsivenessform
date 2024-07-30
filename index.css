@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+.body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.container {
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    border: 8px solid rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 10px 10px 1px rgb(179, 178, 178);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input > label {
+    margin-bottom: 5px;
+}
+
+.input > input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.password > div {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#text{
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+#label{
+color: rgb(255, 0, 0);
+
+}
+button:hover {
+    background-color: #09bd6c;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+ .sociallink {
+    display: flex;
+    justify-content: space-around;
+}
+.sociallink > div 
+{   
+    display: flex;
+    justify-content: center;
+}
+#linkedin, #google,#discord  {
+
+
+color: white;
+padding:5px 20px;
+font-size: 40px;
+
+}
+
+
+#google {
+   width: auto;
+    background-color: #f01c00;
+}
+
+#linkedin {
+    width: auto;
+
+    background-color: #0077b5;
+}
+
+#discord {
+    width: auto;
+
+    background-color: #7289da;
+}
+
+
+@media (max-width: 1024px) {
+    h1,header {
+        font-size: 24px;
+    }
+
+    .input > label {
+        font-size: 14px;
+    }
+
+    .input > input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    
+    #linkedin, #google,#discord  {
+
+
+        color: white;
+        padding:5px 20px;
+        font-size: 30px;
+        
+        }
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        border-width: 4px;
+    }
+
+    h1,header {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    #linkedin, #google,#discord  {
+width: 100%;
+text-align: center;
+        color: white;
+        padding:5px 20px;
+        font-size: 25px;
+        
+        }
+        .sociallink {
+            background-color: #7289da;
+            display: flex;
+            flex-direction: column;
+        }
+        
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+        border-width: 1px;
+    }
+
+    h1,header {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #linkedin, #google,#discord  {
+
+
+        color: white;
+        padding:5px 20px;
+        font-size: 20px;
+        
+        }
+        
+}
